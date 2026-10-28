@@ -32,7 +32,7 @@ Run this in a normal terminal (not inside Claude Code), then restart Claude Code
 ```
 npx skills add vercel-labs/skills --skill find-skills -a claude-code -g -y
 ```
-Source: https://github.com/vercel-labs/skills (MIT). Review any skill before installing it.
+Source: https://github.com/vercel-labs/skills (MIT). Tested: installs to `~/.claude/skills/find-skills`. skills.sh audits: Gen Safe, Socket 0 alerts, Snyk Med Risk. Skills run with your agent's permissions, so review any skill before installing it.
 
 ## Built-in skills (nothing to install)
 - `/code-review`: review your changes for bugs
