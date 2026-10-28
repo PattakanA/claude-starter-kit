@@ -26,6 +26,14 @@ Beginner-friendly plugins for Claude Code, with a one-paste setup.
 ```
 Then restart Claude Code.
 
+## Optional: find-skills (needs Node.js)
+Lets Claude search the skills.sh directory and suggest skills for what you're doing.
+Run this in a normal terminal (not inside Claude Code), then restart Claude Code:
+```
+npx skills add vercel-labs/skills --skill find-skills -a claude-code -g -y
+```
+Source: https://github.com/vercel-labs/skills (MIT). Review any skill before installing it.
+
 ## Built-in skills (nothing to install)
 - `/code-review`: review your changes for bugs
 - `/simplify`: clean up code you just wrote

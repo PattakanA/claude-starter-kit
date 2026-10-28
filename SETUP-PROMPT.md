@@ -10,6 +10,11 @@ and wait for me to say it worked before the next one:
 4. /plugin install claude-code-setup@claude-plugins-official
 5. /plugin install claude-mem@thedotmack
 
+Optional last step, only if Node.js is installed (check with `node -v`).
+This is a terminal command, not a slash command, so have me run it in a
+normal terminal, not in this prompt:
+6. npx skills add vercel-labs/skills --skill find-skills -a claude-code -g -y
+
 If one fails, help me debug it (e.g. check /plugin for the marketplace list).
 When all are installed, tell me to restart Claude Code, then explain in 5
 short lines what each plugin does and give me one beginner exercise to try.
