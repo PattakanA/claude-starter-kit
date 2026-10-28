@@ -34,6 +34,16 @@ npx skills add vercel-labs/skills --skill find-skills -a claude-code -g -y
 ```
 Source: https://github.com/vercel-labs/skills (MIT). Tested: installs to `~/.claude/skills/find-skills`. skills.sh audits: Gen Safe, Socket 0 alerts, Snyk Med Risk. Skills run with your agent's permissions, so review any skill before installing it.
 
+## Optional: skill-security (needs Node.js and Python 3)
+Audits a skill for risks (prompt injection, credential theft, malicious code) before you install it.
+Run this in a normal terminal (not inside Claude Code), then restart Claude Code:
+```
+npx skills add superagent-ai/skills --skill skill-security -a claude-code -g -y
+```
+Then ask Claude: "Is this skill safe to install?" and point it at the skill's folder or repo.
+Source: https://github.com/superagent-ai/skills (MIT). It is a static scan, so a pass is one input, not a guarantee.
+On Windows its script command may need `python` or `py` instead of `python3`.
+
 ## Built-in skills (nothing to install)
 - `/code-review`: review your changes for bugs
 - `/simplify`: clean up code you just wrote

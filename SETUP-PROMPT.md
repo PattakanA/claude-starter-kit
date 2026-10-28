@@ -14,6 +14,8 @@ Optional last step, only if Node.js is installed (check with `node -v`).
 This is a terminal command, not a slash command, so have me run it in a
 normal terminal, not in this prompt:
 6. npx skills add vercel-labs/skills --skill find-skills -a claude-code -g -y
+7. npx skills add superagent-ai/skills --skill skill-security -a claude-code -g -y
+   (also needs Python 3; it checks skills for safety before I install them)
 
 If one fails, help me debug it (e.g. check /plugin for the marketplace list).
 When all are installed, tell me to restart Claude Code, then explain in 5
